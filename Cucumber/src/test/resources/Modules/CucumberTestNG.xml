@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests">
+<test name="cucumber">
+    
+     <classes>
+      <class name="com.ServiceNow.TestCases.ServiceNowLogin"/>
+ 
+    </classes>
+ 
+</test>
+</suite>

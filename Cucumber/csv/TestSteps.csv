@@ -1,0 +1,65 @@
+u_name,sys_id,u_number,u_order,u_test_case,u_field_name,u_value,u_active,u_step_type.u_name
+Click on URL,afe09ce3db23220075277befbf96192e,TCS000001002,2,,,https://dev23996.service-now.com,true,openURL
+Enter password,df61dc27db23220075277befbf9619ba,TCS000001005,4,,user_password@id,Google@123,true,enterText
+Click Login Button,5e91dc27db23220075277befbf961906,TCS000001006,5,,sysverb_login@id,,true,click
+ExceptedResult,6a11b9d1db0cb20075277befbf96197c,TCS000001038,6,,//button[text()='Logout']@xpath,Logout,true,verifyText
+closeBrowser,a6e90662db00360075277befbf961970,TCS000001041,7,,,,true,closeBrowser
+OpenBrowser,d05eed6adbccf20075277befbf961952,TCS000001040,100,,,firefox,true,openBrowser
+Click on URL,5edcb830db04b20075277befbf9619cb,TCS000001032,110,,,https://dev23996.service-now.com,true,openURL
+Enter User name field,f2af7470db04b20075277befbf961924,TCS000001033,120,,user_name@id,admin,true,enterText
+Enter password,5eef7070db04b20075277befbf9619bb,TCS000001034,140,,user_password@id,Google@123,true,enterText
+Click Login Button,4e204570db04b20075277befbf961925,TCS000001035,160,,sysverb_login@id,,true,click
+Click on the incident creation URL,0cdfe270db33220075277befbf961920,TCS000001007,180,,,https://dev23996.service-now.com/nav_to.do?uri=incident.do?sys_id=-1,true,openURL
+Enter Caller,09e272b0db33220075277befbf9619a6,TCS000001008,200,,sys_display.incident.caller_id@id,Mabel Weeden,true,enterText
+Enter Short Description,34c3b270db33220075277befbf9619a2,TCS000001009,210,,div[id='element.incident.short_description'] input[id='incident.short_description']@cssSelector,This is a test incident using automated script,true,enterText
+Click Submit,3c2af634db33220075277befbf9619fc,TCS000001010,240,,sysverb_insert@id,,true,click
+OpenBrowser,41c1fe1edb0cf20075277befbf961954,TCS000001039,1,c95e76f4db33220075277befbf961916,sys_display.change_request.assigned_to@id,Bud Richman,true,openBrowser
+Enter User name field,99211067db23220075277befbf96193b,TCS000001003,3,168a8f71db10320075277befbf9619f2,user_name@id,admin,true,enterText
+Open Browser,105cc7b1db10320075277befbf9619f6,TCS000001073,100,168a8f71db10320075277befbf9619f2,,Chrome,true,openBrowser
+Open new change,d97e32f4db33220075277befbf9619b2,TCS000001016,100,c95e76f4db33220075277befbf961916,,https://dev23996.service-now.com/nav_to.do?uri=change_request.do?sys_id=-1,true,
+Enter Short Description,2ddfbef4db33220075277befbf9619a0,TCS000001017,200,c95e76f4db33220075277befbf961916,short_description,Change raised by automated testing,true,
+Open URL,557c8fb1db10320075277befbf96198e,TCS000001074,200,168a8f71db10320075277befbf9619f2,,https://dev23996.service-now.com,true,openURL
+enterUserName,70dc4bb1db10320075277befbf96194d,TCS000001076,300,168a8f71db10320075277befbf9619f2,user_name@id,admin,true,enterText
+Click Submit,8050c338db33220075277befbf9619b9,TCS000001018,300,c95e76f4db33220075277befbf961916,sysverb_insert,,true,
+Enter password,1e1d0fb1db10320075277befbf9619bd,TCS000001077,400,168a8f71db10320075277befbf9619f2,user_password@id,Google@123,true,enterText
+Click on Submit button,ec4d4bb1db10320075277befbf96197a,TCS000001078,500,168a8f71db10320075277befbf9619f2,#sysverb_login@cssSelector,,true,click
+Enter Change in Filter,7d9dc3f1db10320075277befbf9619d6,TCS000001079,600,168a8f71db10320075277befbf9619f2,filter@id,Change,true,enterText
+Click for normal change,5f5297f1db10320075277befbf96199c,TCS000001081,800,168a8f71db10320075277befbf9619f2,Normal: Changes without predefined plans that require approval and CAB authorization.@linkText,,true,click
+Enter Configuration Item,38b317f1db10320075277befbf961941,TCS000001084,900,168a8f71db10320075277befbf9619f2,sys_display.change_request.cmdb_ci@id,*ANNIE-IBM,true,enterText
+Enter Short description,f1f39735db10320075277befbf961907,TCS000001085,1000,168a8f71db10320075277befbf9619f2,change_request.short_description@id,Test case short description,true,enterText
+Enter Description,d8f59775db10320075277befbf961914,TCS000001086,1100,168a8f71db10320075277befbf9619f2,change_request.description@id,Automated Description,true,enterText
+Click on Tab Note,1df697f1db10320075277befbf9619a2,TCS000001088,1300,168a8f71db10320075277befbf9619f2,//span[@class='tab_caption_text' and text()='Notes']@xpath,,true,click
+Enter work notes,5db69775db10320075277befbf961931,TCS000001087,1400,168a8f71db10320075277befbf9619f2,change_request.work_notes@id,Hello first work note entry.,true,enterText
+Click on Contextmenu On,498237d8dba4320075277befbf961909,TCS000001093,1450,168a8f71db10320075277befbf9619f2, button.btn-icon.icon-menu.navbar-btn@cssSelector,,true,headerContext
+Select context menu,98285375db10320075277befbf9619ff,TCS000001090,1500,168a8f71db10320075277befbf9619f2,#context_1>div[class='context_item']@cssSelector,Save,true,headerContext
+Logout,d6689f75db10320075277befbf96192c,TCS000001091,1600,168a8f71db10320075277befbf9619f2,gsft_logout,,true,click
+ServiceNowLoginPage,17b8ea67db00760075277befbf961900,TCS000001057,100,4b86e227db00760075277befbf9619e4,,https://dev23996.service-now.com/,true,openURL
+enterUserName,fed826a7db00760075277befbf961909,TCS000001058,200,4b86e227db00760075277befbf9619e4,user_name@id,admin,true,enterText
+enterPassword,0a192e67db00760075277befbf96195d,TCS000001060,300,4b86e227db00760075277befbf9619e4,user_password@id,Google@123,true,enterText
+clickOnSubmit,703926a7db00760075277befbf961911,TCS000001061,400,4b86e227db00760075277befbf9619e4,#sysverb_login@cssSelector,,true,click
+SearchIncident,d759ea67db00760075277befbf9619ff,TCS000001062,500,4b86e227db00760075277befbf9619e4,filter@id,Incident,true,enterText
+ClickonIncident,530bea67db00760075277befbf9619ac,TCS000001063,600,4b86e227db00760075277befbf9619e4,.submenu li[modulename='All']>button+a[target='gsft_main']@cssSelector,,true,click
+Clickon Create NeW,98eb6ee7db00760075277befbf961990,TCS000001064,650,4b86e227db00760075277befbf9619e4,Create New@linkText,,true,click
+enterCallerId,082c2ee7db00760075277befbf9619f9,TCS000001065,700,4b86e227db00760075277befbf9619e4,sys_display.incident.caller_id@id,Abel Tuter,true,enterText
+enterShortDescription,e6ace2e7db00760075277befbf961979,TCS000001066,900,4b86e227db00760075277befbf9619e4,div[id='element.incident.short_description'] input[id='incident.short_description']@cssSelector,This Incident created automation,true,enterText
+clickonSubmit,3a5deee7db00760075277befbf9619aa,TCS000001067,1000,4b86e227db00760075277befbf9619e4,.navbar_ui_actions #sysverb_insert@cssSelector,,true,click
+ServiceNowLoginPage,1a63ae63db00760075277befbf9619e7,TCS000001053,100,16726623db00760075277befbf961930,,https://dev23996.service-now.com/,true,openURL
+enterUserName,cd242ea3db00760075277befbf9619b2,TCS000001054,200,16726623db00760075277befbf961930,login_Page_Username_TextBox,admin,true,enterText
+enterPassword,6d44ae63db00760075277befbf9619fd,TCS000001055,300,16726623db00760075277befbf961930,user_password@id,Google@123,true,enterText
+clickOnSubmit,79d4eae3db00760075277befbf9619aa,TCS000001056,400,16726623db00760075277befbf961930,#sysverb_login@cssSelector,,true,click
+Open the change,51830f38db33220075277befbf961993,TCS000001022,100,7af24378db33220075277befbf9619d2,,https://dev23996.service-now.com/nav_to.do?uri=change_request.do?sys_id=a89f7238db33220075277befbf96,true,
+Open the change,f8718738db33220075277befbf9619f9,TCS000001019,100,04610f38db33220075277befbf96191f,,https://dev23996.service-now.com/nav_to.do?uri=change_request.do?sys_id=a89f7238db33220075277befbf96,true,
+Enter Short Description,2a910b38db33220075277befbf9619f3,TCS000001020,200,04610f38db33220075277befbf96191f,short_description,This change is updated via Automated test script,true,
+Enter Short Description,38a3cf38db33220075277befbf9619bb,TCS000001023,200,7af24378db33220075277befbf9619d2,short_description,This change is updated via Automated test script2,true,
+Update Change,71c3cf38db33220075277befbf9619bd,TCS000001024,300,7af24378db33220075277befbf9619d2,sysverb_update,,true,
+Update Change,d402cff4db33220075277befbf961939,TCS000001021,300,04610f38db33220075277befbf96191f,sysverb_update,,true,
+OpenServiceNowLoginPage,e02a5d6bdb8c360075277befbf961903,TCS000001046,10,935cfab4db33220075277befbf9619f9,,https://dev23996.service-now.com,true,openURL
+enterUserName,3c7a9d2bdb8c360075277befbf961963,TCS000001048,20,935cfab4db33220075277befbf9619f9,user_name@id,admin,true,enterText
+enterPassword,8a5a1d6bdb8c360075277befbf9619e1,TCS000001047,30,935cfab4db33220075277befbf9619f9,user_password@id,Google@123,true,enterText
+clickOnSubmit,3a9a1d6bdb8c360075277befbf9619e3,TCS000001049,40,935cfab4db33220075277befbf9619f9,#sysverb_login@cssSelector,,true,click
+SerachIncident,9fd4e12fdb8c360075277befbf96191e,TCS000001050,50,935cfab4db33220075277befbf9619f9,filter@id,Incident,true,enterText
+ClickOnIncident,179c3e74db33220075277befbf961986,TCS000001012,200,935cfab4db33220075277befbf9619f9,.submenu li[modulename='All']>button+a[target='gsft_main']@cssSelector,,true,click
+Enter IncidentNumber,a88d3a74db33220075277befbf9619e1,TCS000001014,300,935cfab4db33220075277befbf9619f9,#list_nav_incident input[placeholder='Search']@cssSelector,INC0010093,true,enterText
+ClickOnIncidentNumber,709d3e74db33220075277befbf96198c,TCS000001015,500,935cfab4db33220075277befbf9619f9,//a[text()='INC0010093']@xpath, ,true,click
+UpdatedDescription,c50bad6fdb8c360075277befbf9619dc,TCS000001051,550,935cfab4db33220075277befbf9619f9,div[id='element.incident.short_description'] input[id='incident.short_description']@cssSelector,Updated Description ,true,enterText
+clickonUpdateButton,235be5efdb8c360075277befbf961977,TCS000001052,560,935cfab4db33220075277befbf9619f9,.navbar_ui_actions #sysverb_update@cssSelector,,true,click
